@@ -1,6 +1,7 @@
 import { Injector, NgModule } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
+import { UiElementsModule } from 'projects/ui-elements/src/public-api';
 import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { NgMicroComponent } from './ng-micro-component/ng-micro.component';
   entryComponents: [NgMicroComponent],
   imports: [
     BrowserModule,
+    UiElementsModule
   ],
   bootstrap: environment.production ? [] : [AppComponent]
 })

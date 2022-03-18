@@ -1,9 +1,9 @@
 import { Injector, NgModule } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
+import { UiElementsModule } from 'projects/ui-elements/src/public-api';
 import { environment } from '../environments/environment';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgOtherMicroComponent } from './ng-other-micro/ng-other-micro.component';
 
@@ -15,6 +15,7 @@ import { NgOtherMicroComponent } from './ng-other-micro/ng-other-micro.component
   entryComponents: [NgOtherMicroComponent],
   imports: [
     BrowserModule,
+    UiElementsModule
   ],
   bootstrap: environment.production ? [] : [AppComponent]
 })

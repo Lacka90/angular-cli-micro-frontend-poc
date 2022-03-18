@@ -323,6 +323,37 @@
           }
         }
       }
+    },
+    "ui-elements": {
+      "projectType": "library",
+      "root": "projects/ui-elements",
+      "sourceRoot": "projects/ui-elements/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ui-elements/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-elements/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ui-elements/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-elements/src/test.ts",
+            "tsConfig": "projects/ui-elements/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-elements/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-cli-micro-frontend-poc"
