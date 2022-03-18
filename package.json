@@ -4,9 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-ng-micro": "ng serve --project=ng-micro-frontend --port=4210",
+    "start-ng-other-micro": "ng serve --project=ng-other-micro-frontend --port=4220",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build-ng-micro": "ng build --project ng-micro-frontend --output-hashing=none && cat dist/ng-micro-frontend/runtime.js dist/ng-micro-frontend/polyfills.js dist/ng-micro-frontend/main.js > dist/ng-micro-frontend-bundle.js",
+    "build-ng-other-micro": "ng build --project ng-other-micro-frontend --output-hashing=none && cat dist/ng-other-micro-frontend/runtime.js dist/ng-other-micro-frontend/polyfills.js dist/ng-other-micro-frontend/main.js > dist/ng-other-micro-frontend-bundle.js",
+    "serve-micro-bundles": "npx lite-server --baseDir='./dist'"
   },
   "private": true,
   "dependencies": {
@@ -14,16 +17,21 @@
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
+    "@angular/elements": "^12.2.16",
     "@angular/forms": "~12.2.0",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "document-register-element": "^1.7.2",
+    "ngx-build-plus": "^12.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "^12.1.3",
     "@angular-devkit/build-angular": "~12.2.16",
+    "@angular-extensions/elements": "^13.0.0",
     "@angular/cli": "~12.2.16",
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",

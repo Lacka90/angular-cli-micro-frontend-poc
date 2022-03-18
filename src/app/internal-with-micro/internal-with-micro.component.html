@@ -1,0 +1,12 @@
+<p>internal-with-micro works!</p>
+
+<ng-micro-component
+  *axLazyElement="'http://localhost:3000/ng-micro-frontend-bundle.js'"
+  [authToken]="'asdToken'"
+  [backendUrl]="'http://my-backend.com'"
+></ng-micro-component>
+<ng-other-micro-component
+  *axLazyElement="'http://localhost:3000/ng-other-micro-frontend-bundle.js'"
+  [authToken]="'asdToken'"
+  [backendUrl]="'http://my-other-backend.com'"
+></ng-other-micro-component>
