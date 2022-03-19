@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InternalWithMicroComponent } from './internal-with-micro.component';
+import { HomeComponent } from './home.component';
 
-describe('InternalWithMicroComponent', () => {
-  let component: InternalWithMicroComponent;
-  let fixture: ComponentFixture<InternalWithMicroComponent>;
+describe('HomeComponent', () => {
+  let component: HomeComponent;
+  let fixture: ComponentFixture<HomeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InternalWithMicroComponent ]
+      declarations: [ HomeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InternalWithMicroComponent);
+    fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

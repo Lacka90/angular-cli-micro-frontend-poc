@@ -1,27 +1,71 @@
 # AngularCliMicroFrontendPoc
+This project is a POC to use angular-element based micro-frontends and shared ui-library in an angular application.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.16.
+## Micro-frontends
+The current POC contains these parts
+- Root angular 12 project
+- ng-micro-frontend named subproject (#1 micro-frontend)
+- ng-other micro-frontend named subproject (#2 micro-frontend)
 
-## Development server
+The 2 micro frontends built and bundled with npm scripts:
+- `npm run build-ng-micro`
+- `npm run build-ng-other-micro`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The core application load the micro-frontend bundles with `@angular-extensions/elements`'s directive named: `*axLazyElement`
 
-## Code scaffolding
+Example usage of a micro frontend:
+```
+<ng-micro-component
+  *axLazyElement="'http://localhost:3000/ng-micro-frontend-bundle.js'"
+  [authToken]="'asdToken'"
+  [backendUrl]="'http://my-backend.com'"
+></ng-micro-component>
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Other more advanced usage of this lib can be found at:
+- https://angular-extensions.github.io/elements/#/examples/advanced
 
-## Build
+### Use web-components in development
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To make web-components bundle locally available, you need to expose it in a local url.
 
-## Running unit tests
+You can do this with the following npm script:
+- `npm run serve-micro-bundles`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This server will live reload when you run any micro-frontend build command.
 
-## Running end-to-end tests
+### Develop micro-frontend separately
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+You can develop the micro-frontend separately from the core application. 
+To run only that part these are the scripts that do the job:
+- `npm run start-ng-micro` 
+- `npm run start-ng-other-micro`
 
-## Further help
+You can configure the micro-frontend input params in the enclosure app.component which is used only for development purposes, the built bundle will skip this file.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Generating new micro frontend
+
+The following step will create a new web-component that you can use in your application.
+
+- Create micro-frontend app:
+  - `npm run ng -- g application micro-frontend-name --style=scss --routing=false `
+
+- Setup internal angular builder webpack in angular json (find the created subproject):
+  ```
+  "architect": {
+        "build": {
+          "builder": "@angular-builders/custom-webpack:browser",
+          "options": {
+            "customWebpackConfig": {
+              "path": "micro.webpack.config.js",
+              "mergeStrategies": {
+                "externals": "replace"
+              }
+            },
+            "outputPath": "dist/ng-other-micro-frontend",
+  ```
+
+- Create npm scripts:
+  - `"start-micro-frontend-name": "ng serve --project=micro-frontend-name --port=xxxx"`
+  - `"build-micro-frontend-name": "ng build --project micro-frontend-name --output-hashing=none && cat dist/micro-frontend-name/runtime.js dist/micro-frontend-name/polyfills.js dist/micro-frontend-name/main.js > dist/micro-frontend-name-bundle.js"`
+

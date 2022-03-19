@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InternalComponent } from './internal.component';
+import { LazyMicroWrapperComponent } from './lazy-micro-wrapper.component';
 
-describe('InternalComponent', () => {
-  let component: InternalComponent;
-  let fixture: ComponentFixture<InternalComponent>;
+describe('LazyMicroWrapperComponent', () => {
+  let component: LazyMicroWrapperComponent;
+  let fixture: ComponentFixture<LazyMicroWrapperComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InternalComponent ]
+      declarations: [ LazyMicroWrapperComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InternalComponent);
+    fixture = TestBed.createComponent(LazyMicroWrapperComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -3,15 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InternalComponent } from './internal/internal.component';
-import { InternalWithMicroComponent } from './internal-with-micro/internal-with-micro.component';
+import { HomeComponent } from './home/home.component';
+import { MicroWrapperComponent } from './micro-wrapper/micro-wrapper.component';
 import { LazyElementsModule } from '@angular-extensions/elements';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InternalComponent,
-    InternalWithMicroComponent
+    HomeComponent,
+    MicroWrapperComponent
   ],
   imports: [
     BrowserModule,
