@@ -1,0 +1,15 @@
+.tax-button {
+  background-color: red;
+  border: 1px solid yellow;
+
+  &.small {
+    font-size: 10px;
+  }
+  &.large {
+    font-size: 30px;
+  }
+
+  &.primary {
+    background-color: blue;
+  }
+}

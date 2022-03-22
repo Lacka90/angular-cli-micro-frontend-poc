@@ -1,0 +1,1678 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [
+        {
+            "name": "UiElementsService",
+            "id": "injectable-UiElementsService-2900c271a3de2201f9fb5debb817422814a48b716b93337232363b85f452779e2e53bd71568712045ac843ff3acce84f1e9bdd1c58cf22e3ebff095a2eae4de8",
+            "file": "projects/ui-elements/src/lib/ui-elements.service.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "getData",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "{}",
+                    "typeParameters": [],
+                    "line": 10,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class UiElementsService {\n\n  constructor() { }\n\n  getData() {\n    return ['asd']\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-d980243b06a6a2b607367914ba8b7aebc09d7c559ceb8747d121893d251169c02ac5f84892dca68b9cb0c9c14957c3b71d589ec3e5bfe1bccd123434bfd532b4",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'angular-cli-micro-frontend-poc'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'angular-cli-micro-frontend-poc';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"core-application\">\n  <nav>\n    <a routerLink=\"/home\" style=\"margin-right: 1em;\">Home</a>\n\n    <a routerLink=\"/micro\" style=\"margin-right: 1em;\">Micro</a>\n\n    <a routerLink=\"/lazy-micro\" style=\"margin-right: 1em;\">Lazy-Micro</a>\n  </nav>\n  <router-outlet></router-outlet>\n</div>\n"
+        },
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-5f08ff5cc2151924f7b9dddec54cd723bc2d0867d6cc04949caed4bba6abd9c2bf713d961bba48f76ecf13570c36b388308806c1e0752bf6f054eb1df477cfaf-1",
+            "file": "projects/ng-micro-frontend/src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "authToken",
+                    "defaultValue": "'authToken'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "backendUrl",
+                    "defaultValue": "'backendUrl'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "'ng-micro-frontend'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'ng-micro-frontend';\n\n  authToken= 'authToken';\n  backendUrl= 'backendUrl';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "AppComponent-1",
+            "templateData": "<app-ng-micro [authToken]=\"authToken\" [backendUrl]=\"backendUrl\"></app-ng-micro>\n"
+        },
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-f434a7e1f4c7e3bf64d8bdd0535313a510490ab8427052b0321c08f96131d29697632e41b8d70438e39c8e1cd0479fe7708e9479488a4f5d89be15ceacd2ca70-2",
+            "file": "projects/ng-other-micro-frontend/src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "authToken",
+                    "defaultValue": "'otherAuthToken'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "backendUrl",
+                    "defaultValue": "'otherBackendUrl'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "'ng-other-micro-frontend'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'ng-other-micro-frontend';\n\n  authToken= 'otherAuthToken';\n  backendUrl= 'otherBackendUrl';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "isDuplicate": true,
+            "duplicateId": 2,
+            "duplicateName": "AppComponent-2",
+            "templateData": "<app-ng-other-micro [authToken]=\"authToken\" [backendUrl]=\"backendUrl\"></app-ng-other-micro>\n"
+        },
+        {
+            "name": "HomeComponent",
+            "id": "component-HomeComponent-2e9d57cf0a92d9672d657955464c5fd8c8e4fb8084cb033302813252acfd4e5ddda8f586ee10e2b38a0175cf9745ec30c59a2beabfb7b1c663219d231fa130ad",
+            "file": "src/app/home/home.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-home",
+            "styleUrls": [
+                "./home.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./home.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-home',\n  templateUrl: './home.component.html',\n  styleUrls: ['./home.component.scss']\n})\nexport class HomeComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./home.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>home works!</p>\n"
+        },
+        {
+            "name": "LazyMicroWrapperComponent",
+            "id": "component-LazyMicroWrapperComponent-d0dfd42fde5f9f246af3923e071805c0da2caec12bcfb8e17fadb26711e9d634e04b778a865b391a4531d0282d16290c7386e7f07b4945af4d58f2e9e5e10bed",
+            "file": "src/app/lazy-micro-wrapper/lazy-micro-wrapper.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-lazy-micro-wrapper",
+            "styleUrls": [
+                "./lazy-micro-wrapper.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./lazy-micro-wrapper.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-lazy-micro-wrapper',\n  templateUrl: './lazy-micro-wrapper.component.html',\n  styleUrls: ['./lazy-micro-wrapper.component.scss']\n})\nexport class LazyMicroWrapperComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./lazy-micro-wrapper.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>lazy-micro-wrapper works!</p>\n\n<ng-micro-component\n  *axLazyElement=\"'http://localhost:3000/ng-micro-frontend-bundle.js'\"\n  [authToken]=\"'lazy-asdToken'\"\n  [backendUrl]=\"'http://my-lazy-backend.com'\"\n></ng-micro-component>\n<ng-other-micro-component\n  *axLazyElement=\"'http://localhost:3000/ng-other-micro-frontend-bundle.js'\"\n  [authToken]=\"'lazy-asdToken'\"\n  [backendUrl]=\"'http://my-other-lazy-backend.com'\"\n></ng-other-micro-component>\n"
+        },
+        {
+            "name": "MicroWrapperComponent",
+            "id": "component-MicroWrapperComponent-2ca8f900d3722d9fd4c2b3da25f9592dedc004a8f0e8f03f7ed8c7d43634f591ae31190f1790bb3b9c574474f6a051bf3e3577d2edb7c1315a181a78fbc6ae47",
+            "file": "src/app/micro-wrapper/micro-wrapper.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-micro-wrapper",
+            "styleUrls": [
+                "./micro-wrapper.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./micro-wrapper.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-micro-wrapper',\n  templateUrl: './micro-wrapper.component.html',\n  styleUrls: ['./micro-wrapper.component.scss']\n})\nexport class MicroWrapperComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./micro-wrapper.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>micro-wrapper works!</p>\n\n<ng-micro-component\n  *axLazyElement=\"'http://localhost:3000/ng-micro-frontend-bundle.js'\"\n  [authToken]=\"'asdToken'\"\n  [backendUrl]=\"'http://my-backend.com'\"\n></ng-micro-component>\n<ng-other-micro-component\n  *axLazyElement=\"'http://localhost:3000/ng-other-micro-frontend-bundle.js'\"\n  [authToken]=\"'asdToken'\"\n  [backendUrl]=\"'http://my-other-backend.com'\"\n></ng-other-micro-component>\n"
+        },
+        {
+            "name": "NgMicroComponent",
+            "id": "component-NgMicroComponent-5a2535ac568e220fbd050a6ff498e125eb89f0acac4f5429e88d8f5a8b9931dde248918df1d57cc1a158ad0f2cd2c4a75715dca0c84e8db2f0254b574434d776",
+            "file": "projects/ng-micro-frontend/src/app/ng-micro-component/ng-micro.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-ng-micro",
+            "styleUrls": [
+                "./ng-micro.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./ng-micro.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "authToken",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "backendUrl",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-ng-micro',\n  templateUrl: './ng-micro.component.html',\n  styleUrls: ['./ng-micro.component.scss']\n})\nexport class NgMicroComponent {\n  @Input() authToken: string = '';\n\n  @Input() backendUrl: string = '';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./ng-micro.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div style=\"border: 1px solid black;\">\n<p>ng-micro-component works!</p>\n<div>\n  Auth Token: {{ authToken | json }}\n</div>\n<div>\n  Backend URL: {{ backendUrl | json }}\n</div>\n\n<lib-ui-elements data=\"micro\"></lib-ui-elements>\n</div>\n\n"
+        },
+        {
+            "name": "NgOtherMicroComponent",
+            "id": "component-NgOtherMicroComponent-307491ac38d4c71b9bf62e9009ffdb6a113c172e2a76540c6901720fcbe0498d48b9e11572c8e336f45fde30ee3c3e9935656321f5e25ecd45fd6658ef0f62c6",
+            "file": "projects/ng-other-micro-frontend/src/app/ng-other-micro/ng-other-micro.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-ng-other-micro",
+            "styleUrls": [
+                "./ng-other-micro.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./ng-other-micro.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "authToken",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "backendUrl",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-ng-other-micro',\n  templateUrl: './ng-other-micro.component.html',\n  styleUrls: ['./ng-other-micro.component.scss']\n})\nexport class NgOtherMicroComponent {\n  @Input() authToken: string = '';\n\n  @Input() backendUrl: string = '';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./ng-other-micro.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div style=\"border: 1px solid red;\">\n<p>ng-other-micro works!</p>\n<div>Token: {{ authToken | json }}</div>\n<div>Token: {{ backendUrl | json }}</div>\n\n<lib-ui-elements data=\"other-micro\"></lib-ui-elements>\n</div>\n"
+        },
+        {
+            "name": "TaxButtonComponent",
+            "id": "component-TaxButtonComponent-4851b842b4edb1f423dd9e233338a6112946057f7d65ded817c9614da41170e26b138b524c09dd2ed1b60d2518a8599015b5cbf9ff87efe4fd909ea3e969813d",
+            "file": "projects/ui-elements/src/lib/tax-button/tax-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "tax-tax-button",
+            "styleUrls": [
+                "./tax-button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./tax-button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'normal'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'tax-tax-button',\n  templateUrl: './tax-button.component.html',\n  styleUrls: ['./tax-button.component.scss']\n})\nexport class TaxButtonComponent {\n\n  @Input() primary: boolean = false\n  @Input() size: string = 'normal'\n  @Input() label: string = ''\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".tax-button {\n  background-color: red;\n  border: 1px solid blue;\n\n  &.small {\n    font-size: 10px;\n  }\n  &.large {\n    font-size: 30px;\n  }\n}\n",
+                    "styleUrl": "./tax-button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<button type=\"button\" class=\"tax-button\" [class.large]=\"size === 'large'\" [class.small]=\"size === 'small'\">\n  {{ label }}\n</button>\n"
+        },
+        {
+            "name": "UiElementsComponent",
+            "id": "component-UiElementsComponent-afb8ee9337b055fba3ac74df3a849f7ddc014d13f10ca35fdb62197c47e8e47e754b2fcc01e24c72dca7fc3f60267fb5d29f4d0397aca5442cbbf78e0f0cd361",
+            "file": "projects/ui-elements/src/lib/ui-elements.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-ui-elements",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  ui-elements works! Data: {{ data }}\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "data",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-ui-elements',\n  template: `\n    <p>\n      ui-elements works! Data: {{ data }}\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class UiElementsComponent  {\n@Input() data = ''\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": ""
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-482a9d29452e5f8c9d56e0256c0f3ee37350e5d9993089ff900426fa2722a5c8a1da3de776bbc1e16c9b39b082f061998e418e5aa33094438ec178976f34301c",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { HomeComponent } from './home/home.component';\nimport { MicroWrapperComponent } from './micro-wrapper/micro-wrapper.component';\nimport { LazyElementsModule } from '@angular-extensions/elements';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    HomeComponent,\n    MicroWrapperComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    LazyElementsModule\n  ],\n  schemas: [CUSTOM_ELEMENTS_SCHEMA],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "HomeComponent"
+                        },
+                        {
+                            "name": "MicroWrapperComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-67fcf2f7ccd0884f72cc9c9d1bc209d4c54d086c7d837b3da60304aa12abc14db5ed45c886b6883e33ca27dd1241d30a17c408de303ddfbebf6371c7b36f2d25-1",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ng-micro-frontend/src/app/app.module.ts",
+            "methods": [
+                {
+                    "name": "ngDoBootstrap",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "sourceCode": "import { Injector, NgModule } from '@angular/core';\nimport { createCustomElement } from '@angular/elements';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { UiElementsModule } from 'projects/ui-elements/src/public-api';\nimport { environment } from '../environments/environment';\n\nimport { AppComponent } from './app.component';\nimport { NgMicroComponent } from './ng-micro-component/ng-micro.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    NgMicroComponent\n  ],\n  entryComponents: [NgMicroComponent],\n  imports: [\n    BrowserModule,\n    UiElementsModule\n  ],\n  bootstrap: environment.production ? [] : [AppComponent]\n})\nexport class AppModule {\n  constructor(injector: Injector) {\n    const element = createCustomElement(NgMicroComponent, {injector: injector});\n    if (!customElements.get('ng-micro-component')) {\n      customElements.define('ng-micro-component', element);\n    }\n  }\n\n  ngDoBootstrap() {}\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "NgMicroComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "UiElementsModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-2f5c187fec720030f9823ee1d10c41cc1ac24925bc576f5ea4d4c8e6e27d8dcc6f1c295be6ee4f9c2a7c796098d118c2084a13fa883c4d8236c68a4d978da330-2",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ng-other-micro-frontend/src/app/app.module.ts",
+            "methods": [
+                {
+                    "name": "ngDoBootstrap",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "sourceCode": "import { Injector, NgModule } from '@angular/core';\nimport { createCustomElement } from '@angular/elements';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { UiElementsModule } from 'projects/ui-elements/src/public-api';\nimport { environment } from '../environments/environment';\n\nimport { AppComponent } from './app.component';\nimport { NgOtherMicroComponent } from './ng-other-micro/ng-other-micro.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    NgOtherMicroComponent,\n  ],\n  entryComponents: [NgOtherMicroComponent],\n  imports: [\n    BrowserModule,\n    UiElementsModule\n  ],\n  bootstrap: environment.production ? [] : [AppComponent]\n})\nexport class AppModule {\n  constructor(injector: Injector) {\n    const element = createCustomElement(NgOtherMicroComponent, {injector: injector});\n    if (!customElements.get('ng-other-micro-component')) {\n      customElements.define('ng-other-micro-component', element);\n    }\n  }\n\n  ngDoBootstrap() {}\n}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "NgOtherMicroComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "UiElementsModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-be7e5493b52f5b52ac63d030eef20e7da787d7eb91f35b43b216f292c969d6f09bc350cec98958ba842b7bc05a90c597279fd4d0f986e577b0780264980d85d4",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { MicroWrapperComponent } from './micro-wrapper/micro-wrapper.component';\nimport { HomeComponent } from './home/home.component';\n\nconst routes: Routes = [\n  { path: '', redirectTo: '/home', pathMatch: 'full' },\n  { path: 'home', component: HomeComponent },\n  { path: 'micro', component: MicroWrapperComponent },\n  { path: 'lazy-micro', loadChildren: () => \"import('./lazy-micro-wrapper/lazy-micro-wrapper.module').then(m => m.LazyMicroWrapperModule)\" }\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "LazyMicroWrapperModule",
+            "id": "module-LazyMicroWrapperModule-9832e6dee03d1d73f90498e448d7534ac1df6ab0203f26929e449ff981dc76cab425cb495133b5c7729d0d44401481c1cf1b046a54b1aef8c0b5b986e42c8c13",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/lazy-micro-wrapper/lazy-micro-wrapper.module.ts",
+            "methods": [],
+            "sourceCode": "import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { LazyMicroWrapperRoutingModule } from './lazy-micro-wrapper-routing.module';\nimport { LazyMicroWrapperComponent } from './lazy-micro-wrapper.component';\nimport { LazyElementsModule } from '@angular-extensions/elements';\n\n\n@NgModule({\n  declarations: [\n    LazyMicroWrapperComponent\n  ],\n  imports: [\n    CommonModule,\n    LazyElementsModule,\n    LazyMicroWrapperRoutingModule\n  ],\n  schemas: [CUSTOM_ELEMENTS_SCHEMA]\n})\nexport class LazyMicroWrapperModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "LazyMicroWrapperComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "LazyMicroWrapperRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "LazyMicroWrapperRoutingModule",
+            "id": "module-LazyMicroWrapperRoutingModule-93acaa1687dec36c300e41d9e672845524e10a3067eddb63161473cbdaa8256bb3a6be48027aa2d296d9f67269c1ba1d8b19f9458da92551be671ea296076917",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/lazy-micro-wrapper/lazy-micro-wrapper-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { LazyMicroWrapperComponent } from './lazy-micro-wrapper.component';\n\nconst routes: Routes = [{\n  path: '', component: LazyMicroWrapperComponent\n}];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class LazyMicroWrapperRoutingModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "UiElementsModule",
+            "id": "module-UiElementsModule-77456a556b5d6eb53f35a75c765490a49854ea0533f2a20e35c35382bfb0123acb7710500d9f92f37405e94a098ac10146b8370be073440c8bb3b39589b2434f",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-elements/src/lib/ui-elements.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { UiElementsComponent } from './ui-elements.component';\nimport { TaxButtonComponent } from './tax-button/tax-button.component';\n\n\n\n@NgModule({\n  declarations: [\n    UiElementsComponent,\n    TaxButtonComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    UiElementsComponent\n  ]\n})\nexport class UiElementsModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "TaxButtonComponent"
+                        },
+                        {
+                            "name": "UiElementsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "UiElementsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ng-micro-frontend/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ng-other-micro-frontend/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-elements/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ng-micro-frontend/src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ng-micro-frontend/src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ng-other-micro-frontend/src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false,\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ng-other-micro-frontend/src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true,\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-elements/src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-elements/src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ng-micro-frontend/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ng-other-micro-frontend/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-elements/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-elements/src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-elements/src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-elements/src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TaxButtonComponent>",
+                "defaultValue": "(args: TaxButtonComponent) => ({\n  props: args,\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/ng-micro-frontend/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ng-micro-frontend/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ng-micro-frontend/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/ng-other-micro-frontend/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ng-other-micro-frontend/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ng-other-micro-frontend/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/ui-elements/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-elements/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-elements/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "projects/ng-micro-frontend/src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ng-micro-frontend/src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "projects/ng-micro-frontend/src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ng-micro-frontend/src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "projects/ng-other-micro-frontend/src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ng-other-micro-frontend/src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false,\n}"
+                }
+            ],
+            "projects/ng-other-micro-frontend/src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ng-other-micro-frontend/src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true,\n}"
+                }
+            ],
+            "projects/ui-elements/src/stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-elements/src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-elements/src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-elements/src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-elements/src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-elements/src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TaxButtonComponent>",
+                    "defaultValue": "(args: TaxButtonComponent) => ({\n  props: args,\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "",
+                        "redirectTo": "/home",
+                        "pathMatch": "full"
+                    },
+                    {
+                        "path": "home",
+                        "component": "HomeComponent"
+                    },
+                    {
+                        "path": "micro",
+                        "component": "MicroWrapperComponent"
+                    },
+                    {
+                        "path": "lazy-micro",
+                        "loadChildren": "./lazy-micro-wrapper/lazy-micro-wrapper.module#LazyMicroWrapperModule",
+                        "children": [
+                            {
+                                "kind": "module",
+                                "children": [
+                                    {
+                                        "name": "routes",
+                                        "filename": "src/app/lazy-micro-wrapper/lazy-micro-wrapper-routing.module.ts",
+                                        "module": "LazyMicroWrapperRoutingModule",
+                                        "children": [
+                                            {
+                                                "path": "",
+                                                "component": "LazyMicroWrapperComponent"
+                                            }
+                                        ],
+                                        "kind": "module"
+                                    }
+                                ],
+                                "module": "LazyMicroWrapperModule"
+                            }
+                        ]
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/ng-micro-frontend/src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ng-micro-frontend/src/app/ng-micro-component/ng-micro.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NgMicroComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ng-micro-frontend/src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ng-micro-frontend/src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ng-micro-frontend/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ng-micro-frontend/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ng-other-micro-frontend/src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ng-other-micro-frontend/src/app/ng-other-micro/ng-other-micro.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NgOtherMicroComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ng-other-micro-frontend/src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ng-other-micro-frontend/src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ng-other-micro-frontend/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ng-other-micro-frontend/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-elements/src/lib/tax-button/tax-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TaxButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-elements/src/lib/ui-elements.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "UiElementsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-elements/src/lib/ui-elements.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "UiElementsService",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-elements/src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-elements/src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-elements/src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-elements/src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-elements/src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-elements/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-elements/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/home/home.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HomeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/lazy-micro-wrapper/lazy-micro-wrapper.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LazyMicroWrapperComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/micro-wrapper/micro-wrapper.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MicroWrapperComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
