@@ -9,7 +9,7 @@
     "build": "ng build",
     "build-ng-micro": "ng build --project ng-micro-frontend --output-hashing=none && cat dist/ng-micro-frontend/runtime.js dist/ng-micro-frontend/polyfills.js dist/ng-micro-frontend/main.js > dist/ng-micro-frontend-bundle.js",
     "build-ng-other-micro": "ng build --project ng-other-micro-frontend --output-hashing=none && cat dist/ng-other-micro-frontend/runtime.js dist/ng-other-micro-frontend/polyfills.js dist/ng-other-micro-frontend/main.js > dist/ng-other-micro-frontend-bundle.js",
-    "serve-micro-bundles": "npx lite-server --baseDir='./dist'",
+    "serve-micro-bundles": "npx lite-server --baseDir='./dist' --open=false",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook"

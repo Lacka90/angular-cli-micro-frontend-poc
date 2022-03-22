@@ -240,6 +240,74 @@
             "templateData": "<app-ng-other-micro [authToken]=\"authToken\" [backendUrl]=\"backendUrl\"></app-ng-other-micro>\n"
         },
         {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-10a5c89f2518b7b3779394e9158eced5dd95335b4bf1114753f7851914d8da0b547579e2dde22cd831e692ca2118f0d7e6c901186dcce4fe3acd36bf14cbec95",
+            "file": "projects/ui-elements/src/lib/tax-button/tax-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "tax-button",
+            "styleUrls": [
+                "./tax-button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./tax-button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'normal'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'tax-button',\n  templateUrl: './tax-button.component.html',\n  styleUrls: ['./tax-button.component.scss']\n})\nexport class ButtonComponent {\n\n  @Input() primary: boolean = false\n  @Input() size: string = 'normal'\n  @Input() label: string = ''\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".tax-button {\n  background-color: red;\n  border: 1px solid yellow;\n\n  &.small {\n    font-size: 10px;\n  }\n  &.large {\n    font-size: 30px;\n  }\n\n  &.primary {\n    background-color: blue;\n  }\n}\n",
+                    "styleUrl": "./tax-button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<button\n  type=\"button\"\n  class=\"tax-button\"\n  [class.large]=\"size === 'large'\"\n  [class.small]=\"size === 'small'\"\n  [class.primary]=\"primary\">\n  {{ label }}\n</button>\n"
+        },
+        {
             "name": "HomeComponent",
             "id": "component-HomeComponent-2e9d57cf0a92d9672d657955464c5fd8c8e4fb8084cb033302813252acfd4e5ddda8f586ee10e2b38a0175cf9745ec30c59a2beabfb7b1c663219d231fa130ad",
             "file": "src/app/home/home.component.ts",
@@ -416,7 +484,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<div style=\"border: 1px solid black;\">\n<p>ng-micro-component works!</p>\n<div>\n  Auth Token: {{ authToken | json }}\n</div>\n<div>\n  Backend URL: {{ backendUrl | json }}\n</div>\n\n<lib-ui-elements data=\"micro\"></lib-ui-elements>\n</div>\n\n"
+            "templateData": "<div style=\"border: 1px solid black;\">\n<p>ng-micro-component works!</p>\n<div>\n  Auth Token: {{ authToken | json }}\n</div>\n<div>\n  Backend URL: {{ backendUrl | json }}\n</div>\n\nUi lib button\n<tax-button [label]=\"'UI Button'\"></tax-button>\n\n</div>\n\n"
         },
         {
             "name": "NgOtherMicroComponent",
@@ -475,116 +543,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<div style=\"border: 1px solid red;\">\n<p>ng-other-micro works!</p>\n<div>Token: {{ authToken | json }}</div>\n<div>Token: {{ backendUrl | json }}</div>\n\n<lib-ui-elements data=\"other-micro\"></lib-ui-elements>\n</div>\n"
-        },
-        {
-            "name": "TaxButtonComponent",
-            "id": "component-TaxButtonComponent-4851b842b4edb1f423dd9e233338a6112946057f7d65ded817c9614da41170e26b138b524c09dd2ed1b60d2518a8599015b5cbf9ff87efe4fd909ea3e969813d",
-            "file": "projects/ui-elements/src/lib/tax-button/tax-button.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "tax-tax-button",
-            "styleUrls": [
-                "./tax-button.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./tax-button.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "label",
-                    "defaultValue": "''",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 12,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "primary",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 10,
-                    "type": "boolean",
-                    "decorators": []
-                },
-                {
-                    "name": "size",
-                    "defaultValue": "'normal'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 11,
-                    "type": "string",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'tax-tax-button',\n  templateUrl: './tax-button.component.html',\n  styleUrls: ['./tax-button.component.scss']\n})\nexport class TaxButtonComponent {\n\n  @Input() primary: boolean = false\n  @Input() size: string = 'normal'\n  @Input() label: string = ''\n\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": ".tax-button {\n  background-color: red;\n  border: 1px solid blue;\n\n  &.small {\n    font-size: 10px;\n  }\n  &.large {\n    font-size: 30px;\n  }\n}\n",
-                    "styleUrl": "./tax-button.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "templateData": "<button type=\"button\" class=\"tax-button\" [class.large]=\"size === 'large'\" [class.small]=\"size === 'small'\">\n  {{ label }}\n</button>\n"
-        },
-        {
-            "name": "UiElementsComponent",
-            "id": "component-UiElementsComponent-afb8ee9337b055fba3ac74df3a849f7ddc014d13f10ca35fdb62197c47e8e47e754b2fcc01e24c72dca7fc3f60267fb5d29f4d0397aca5442cbbf78e0f0cd361",
-            "file": "projects/ui-elements/src/lib/ui-elements.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "lib-ui-elements",
-            "styleUrls": [],
-            "styles": [],
-            "template": "<p>\n  ui-elements works! Data: {{ data }}\n</p>\n",
-            "templateUrl": [],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "data",
-                    "defaultValue": "''",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 14,
-                    "type": "string",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-ui-elements',\n  template: `\n    <p>\n      ui-elements works! Data: {{ data }}\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class UiElementsComponent  {\n@Input() data = ''\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": "",
-            "stylesData": ""
+            "templateData": "<div style=\"border: 1px solid red;\">\n<p>ng-other-micro works!</p>\n<div>Token: {{ authToken | json }}</div>\n<div>Token: {{ backendUrl | json }}</div>\n\nUi lib button also\n<tax-button [label]=\"'UI Button'\"></tax-button>\n\n</div>\n"
         }
     ],
     "modules": [
@@ -876,13 +835,13 @@
         },
         {
             "name": "UiElementsModule",
-            "id": "module-UiElementsModule-77456a556b5d6eb53f35a75c765490a49854ea0533f2a20e35c35382bfb0123acb7710500d9f92f37405e94a098ac10146b8370be073440c8bb3b39589b2434f",
+            "id": "module-UiElementsModule-51e117a1b2b0c3a903460e43f31240440fc80bfc7a6abc8a453ac5ba037347570c8f704a67213c6fdb393f4dbd05ed02c448d0f40eae984fa5925bc2c5567465",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/ui-elements/src/lib/ui-elements.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { UiElementsComponent } from './ui-elements.component';\nimport { TaxButtonComponent } from './tax-button/tax-button.component';\n\n\n\n@NgModule({\n  declarations: [\n    UiElementsComponent,\n    TaxButtonComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    UiElementsComponent\n  ]\n})\nexport class UiElementsModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { ButtonComponent } from './tax-button/tax-button.component';\n\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent\n  ],\n  exports: [\n    ButtonComponent\n  ]\n})\nexport class UiElementsModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -892,10 +851,7 @@
                     "type": "declarations",
                     "elements": [
                         {
-                            "name": "TaxButtonComponent"
-                        },
-                        {
-                            "name": "UiElementsComponent"
+                            "name": "ButtonComponent"
                         }
                     ]
                 },
@@ -907,7 +863,7 @@
                     "type": "exports",
                     "elements": [
                         {
-                            "name": "UiElementsComponent"
+                            "name": "ButtonComponent"
                         }
                     ]
                 },
@@ -948,7 +904,7 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ng-other-micro-frontend/src/test.ts",
+                "file": "projects/ui-elements/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -958,7 +914,7 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui-elements/src/test.ts",
+                "file": "projects/ng-other-micro-frontend/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -988,16 +944,6 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ng-micro-frontend/src/environments/environment.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: false\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ng-micro-frontend/src/environments/environment.prod.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1008,11 +954,11 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ng-other-micro-frontend/src/environments/environment.ts",
+                "file": "projects/ng-micro-frontend/src/environments/environment.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
-                "defaultValue": "{\n  production: false,\n}"
+                "defaultValue": "{\n  production: false\n}"
             },
             {
                 "name": "environment",
@@ -1023,6 +969,16 @@
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: true,\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ng-other-micro-frontend/src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false,\n}"
             },
             {
                 "name": "Large",
@@ -1066,7 +1022,7 @@
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ng-other-micro-frontend/src/test.ts",
+                "file": "projects/ui-elements/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -1075,7 +1031,7 @@
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui-elements/src/test.ts",
+                "file": "projects/ng-other-micro-frontend/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -1107,8 +1063,8 @@
                 "file": "projects/ui-elements/src/stories/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<TaxButtonComponent>",
-                "defaultValue": "(args: TaxButtonComponent) => ({\n  props: args,\n})"
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
             }
         ],
         "functions": [],
@@ -1157,27 +1113,6 @@
                     "type": "literal type"
                 }
             ],
-            "projects/ng-other-micro-frontend/src/test.ts": [
-                {
-                    "name": "context",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ng-other-micro-frontend/src/test.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-                },
-                {
-                    "name": "require",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ng-other-micro-frontend/src/test.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "literal type"
-                }
-            ],
             "projects/ui-elements/src/test.ts": [
                 {
                     "name": "context",
@@ -1194,6 +1129,27 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/ui-elements/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/ng-other-micro-frontend/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ng-other-micro-frontend/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ng-other-micro-frontend/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
@@ -1223,18 +1179,6 @@
                     "defaultValue": "{\n  production: false\n}"
                 }
             ],
-            "projects/ng-micro-frontend/src/environments/environment.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ng-micro-frontend/src/environments/environment.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: false\n}"
-                }
-            ],
             "projects/ng-micro-frontend/src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -1247,16 +1191,16 @@
                     "defaultValue": "{\n  production: true\n}"
                 }
             ],
-            "projects/ng-other-micro-frontend/src/environments/environment.ts": [
+            "projects/ng-micro-frontend/src/environments/environment.ts": [
                 {
                     "name": "environment",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/ng-other-micro-frontend/src/environments/environment.ts",
+                    "file": "projects/ng-micro-frontend/src/environments/environment.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "object",
-                    "defaultValue": "{\n  production: false,\n}"
+                    "defaultValue": "{\n  production: false\n}"
                 }
             ],
             "projects/ng-other-micro-frontend/src/environments/environment.prod.ts": [
@@ -1269,6 +1213,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: true,\n}"
+                }
+            ],
+            "projects/ng-other-micro-frontend/src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ng-other-micro-frontend/src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false,\n}"
                 }
             ],
             "projects/ui-elements/src/stories/Button.stories.ts": [
@@ -1319,8 +1275,8 @@
                     "file": "projects/ui-elements/src/stories/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<TaxButtonComponent>",
-                    "defaultValue": "(args: TaxButtonComponent) => ({\n  props: args,\n})"
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
                 }
             ]
         },
@@ -1504,18 +1460,9 @@
                 "filePath": "projects/ui-elements/src/lib/tax-button/tax-button.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "TaxButtonComponent",
+                "name": "ButtonComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/ui-elements/src/lib/ui-elements.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "UiElementsComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/2",
                 "status": "low"
             },
             {

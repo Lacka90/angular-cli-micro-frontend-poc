@@ -1,5 +1,9 @@
 <p>lazy-micro-wrapper works!</p>
 
+<a routerLink="/lazy-micro" style="margin-right: 1em;">Zero</a>
+<a routerLink="/lazy-micro/a" style="margin-right: 1em;">A</a>
+<a routerLink="/lazy-micro/b" style="margin-right: 1em;">B</a>
+
 <ng-micro-component
   *axLazyElement="'http://localhost:3000/ng-micro-frontend-bundle.js'"
   [authToken]="'lazy-asdToken'"
@@ -10,3 +14,6 @@
   [authToken]="'lazy-asdToken'"
   [backendUrl]="'http://my-other-lazy-backend.com'"
 ></ng-other-micro-component>
+
+
+<router-outlet></router-outlet>
